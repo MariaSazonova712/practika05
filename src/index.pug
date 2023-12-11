@@ -1,0 +1,133 @@
+doctype html
+html(lang="ru")
+    head 
+        title = Главная страница
+        style 
+            include styles/style.css
+    body
+        include modules/header 
+        .banner
+                .text_on_banner
+                    h1 Продукты глубокой заморозки
+                    p Продуктовая база №1
+                    h3 Приглашает к сотрудничеству комплектовщиков, кладовщиков и поваров
+        .cont
+            .text__about
+                h2 О нас
+                p Компания «Продукты глубокой заморозки» — производитель замороженных полуфабрикатов с самым широким ассортиментом в России. На сегодняшний день мы выпускаем продукцию 13-ти категорий, в каждой из которых — десятки наименований.
+                p У нас широкий выбор вкуснейших сытных и десертных блинчиков, высококачественных пельменей премиум-класса, изысканной пиццы, вареников, готовых блюд, выпечки, замороженных овощных миксов. Наш ассортимент постоянно пополняется новой продукцией — компания «Продукты глубокой заморозки» не стоит на месте, постоянно создавая новые вкуснейшие продукты, способные стать достойным дополнением вашего стола
+                p Производственные мощности наших заводов больше, чем объём производства первых 10 производителей из общего рейтинга поставщиков ключевых федеральных сетей. производственного процесса. Вероятность ошибки исключена!  
+        .cont 
+            h2 Товары 
+            .containertwo
+                .containertwo__elem
+                    p.containertwo__elem-post Блинчики     
+                    img(src="img/prod_1.png", alt="")
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Ягоды 
+                    img(src="img/prod_2.png", alt="")
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Пельмени 
+                    img(src="img/prod_3.png", alt="")
+                    
+                .containertwo__elem 
+                    p.containertwo__elem-post Тесто
+                    img(src="img/prod_4.png", alt="")
+                   
+                .containertwo__elem
+                    p.containertwo__elem-post Зелень 
+                    img(src="img/prod_5.png", alt="")
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Вареники 
+                    img(src="img/prod_6.png", alt="")
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Наггетсы 
+                    img(src="img/prod_7.png", alt="")
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Рыба 
+                    img(src="img/prod_8.png", alt="")
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Пицца 
+                    img(src="img/prod_9.png", alt="")
+                    
+                .containertwo__elem 
+                    p.containertwo__elem-post Багет
+                    img(src="img/prod_10.png", alt="")
+                    
+                .containertwo__elem 
+                    p.containertwo__elem-post Кабачки
+                    img(src="img/prod_11.png", alt="")
+                .containertwo__elem 
+                    p.containertwo__elem-post Говядина
+                    img(src="img/prod_12.png", alt="")
+        .cont 
+            h2 Прайс-лист
+            .containerthree
+                .containerthree__elem     
+                    img(src="img/price_img1.png", alt="")
+                    p.containertwo__elem-post Свежие морепродукты и пойманная в дикой природе рыба могут предложить новый уровень питания для большинства диет. 
+                    h1.containertwo__elem-post 550 руб за кг
+                    h2 Рыба
+                .containerthree__elem     
+                    img(src="img/price_img2.png", alt="")
+                    p.containertwo__elem-post Более 60 авторских рецептов горячего хлеба и свежайшей выпечки. Только натуральные и качественные ингридиенты 
+                    h1.containertwo__elem-post 250 руб за кг
+                    h2 Выпечка
+                .containerthree__elem     
+                    img(src="img/price_img3.png", alt="")
+                    p.containertwo__elem-post Свежие овощи имеют огромное значение для нормальной жизнидеятельности человеческого организма
+                    h1.containertwo__elem-post 300 руб за кг
+                    h2 Овощи
+                .containerthree__elem     
+                    img(src="img/price_img4.png", alt="")
+                    p.containertwo__elem-post Свежие ягоды имеют огромное значение для нормальной жизнидеятельности человеческого организма
+                    h1.containertwo__elem-post 250 руб за кг
+                    h2 Ягоды   
+        .cont
+            h2 Оформление заказа
+            .form
+                h2 Заполните форму для оформления заказа
+                .vvod
+                    select(type="text" name="form" placeholder="Регион")
+                        option(value="") Регион
+                        option(value="") Московская область
+                        option(value="") Алтайский край
+                        option(value="") Краснодарский край
+                        option(value="") Другой регион
+                        input(type="text" name="Имя" placeholder="Адрес доставки" )
+                    select(type="text" name="form" placeholder="Выбранный товар")
+                        option(value="") Выбранный товар
+                        option(value="") Блинчики
+                        option(value="") Ягоды
+                        option(value="") Пельмени
+                        option(value="") Тесто
+                        option(value="") Зелень
+                        option(value="") Вареники
+                        option(value="") Наггетсы
+                        option(value="") Рыба
+                        option(value="") Пицца
+                        option(value="") Багет
+                        option(value="") Кабачки
+                        option(value="") Говядина
+                        input(type="text" name="Имя" placeholder="Масса")
+                        input(type="text" name="Имя" placeholder="Комментарий")
+                        input(type="text" name="Имя" placeholder="E-mail")
+                    .button
+                        button(type="submit")  Оформить заказ
+    include modules/footer
+                
+                
+                
+		
+                
+ 
+                 
+                  
+                                
+                        

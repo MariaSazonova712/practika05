@@ -1,0 +1,88 @@
+doctype html
+html(lang="ru")
+    head 
+        title = Главная страница
+        style 
+            include styles/style3.css
+    body
+        include modules/header
+        .cont 
+            h1 Вакансии 
+            .containertwo
+                .containertwo__elem
+                    p.containertwo__elem-post Менеджер по продажам
+                    h2.containertwo__elem-post Доход:
+                    p.containertwo__elem-post до 180 тыс.руб
+                    h2.containertwo__elem-post Требования:
+                    p.containertwo__elem-post - Гражданство РФ
+                    p.containertwo__elem-post - Способность к обучению
+                    p.containertwo__elem-post - Опыт неважен  
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Повар
+                    h2 Доход:
+                    p.containertwo__elem-post до 80 тыс.руб
+                    h2.containertwo__elem-post Требования:
+                    p.containertwo__elem-post - Гражданство РФ
+                    p.containertwo__elem-post - Способность к обучению
+                    p.containertwo__elem-post - Опыт неважен 
+                    
+                .containertwo__elem
+                    p.containertwo__elem-post Кладовщик
+                    h2 Доход:
+                    p до 100 тыс.руб
+                    h2.containertwo__elem-post Требования:
+                    p.containertwo__elem-post - Гражданство РФ
+                    p.containertwo__elem-post - Способность к обучению
+                    p.containertwo__elem-post - Опыт неважен 
+                    
+                .containertwo__elem 
+                    p.containertwo__elem-post Комплектовщик
+                    h2 Доход:
+                    p до 120 тыс.руб
+                    h2.containertwo__elem-post Требования:
+                    p.containertwo__elem-post - Гражданство РФ
+                    p.containertwo__elem-post - Способность к обучению
+                    p.containertwo__elem-post - Опыт неважен
+        .cont 
+            h1 Новости
+            section.grid 
+                article.grid-item
+                    .image
+                        img(src="img/news_1.png", alt="")
+                    .info 
+                        h2 Мясу режут стоимость
+                    .info-text
+                        p Темпы снижения оптовых цен на основные виды мяса ускоряются в условиях повышенного внимания регуляторов к этому рынку
+                    button Подробнее
+                article.grid-item
+                    .image
+                        img(src="img/news_2.png", alt="")
+                    .info 
+                        h2 Мясу режут стоимость
+                    .info-text
+                        p Группа компаний "Дамате" первой в России получила право экспорта мяса и субпродуктов утки в Китай
+                    button Подробнее
+                article.grid-item
+                    .image
+                        img(src="img/news_3.png", alt="")
+                    .info 
+                        h2 Рыбаки Камчатки приблизились к рекорду 
+                    .info-text
+                        p Промышленный лов тихоокеанских лососей завершится на Камчатке 20 сентября, эта рыбалка стала второй по результативности за всю историю
+                    button Подробнее
+        .cont 
+            h1 Вопросы и ответы 
+            .container__questions
+                img(src="img/questions_1.png", alt="")
+                p Каковы основные методы замораживания продукции?
+                p - Заморозка воздухом (конвективное замораживание) и заморозка в жидком азоте
+                img(src="img/questions_2.png", alt="")
+                p Как долго можно хранить замороженную продукцию?
+                p - Срок хранения может варьироваться в зависимости от продукта, но обычно срок составляет от нескольких месяцев до нескольких лет
+                img(src="img/questions_3.png", alt="")
+                p Какие преимущества замороженной продукции перед свежей?
+                p - Замороженная продукция дольше хранится, легче перевозится, и удобна в использовании при приготовлении блюд
+    include modules/footer
+
+

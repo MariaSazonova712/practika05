@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head> 
+    <title>= Главная страница</title>
+    <style>
+       * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(16, 0, 75);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cont {
+  width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.text .burger {
+  display: none;
+}
+
+header {
+  height: 98px;
+  background-color: rgb(181, 236, 223);
+}
+
+header ul {
+  padding-top: 36px;
+}
+
+.text img {
+  margin-top: 5px;
+}
+
+.text ul {
+  display: flex;
+}
+
+.text li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 36px;
+}
+
+.text ul :nth-child(3) {
+  margin-left: 75px;
+}
+
+.text ul :nth-child(4) {
+  margin-left: 100px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont h1 {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.6823529412);
+  margin-top: 48px;
+}
+
+.containertwo {
+  display: grid;
+  grid-template-columns: repeat(2, 582px);
+  gap: 100px;
+  margin-top: 30px;
+  grid-template-rows: 440px;
+}
+.containertwo div {
+  background-color: rgba(226, 185, 217, 0.456);
+  text-align: center;
+  padding-top: 24px;
+}
+.containertwo .containertwo__elem-post {
+  font-size: 40px;
+  font-style: normal;
+}
+.containertwo p {
+  font-size: 40px;
+  color: rgb(117, 99, 188);
+}
+.containertwo h2 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 381px);
+  gap: 60px;
+  padding: 20px 0;
+}
+.grid .grid-item {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.grid .grid-item .grid-item .image {
+  height: 200px;
+  overflow: hidden;
+}
+.grid .grid-item .grid-item .info {
+  position: relative;
+  height: calc(100% - 200px);
+  padding: 16px 14px 80px 14px;
+}
+.grid .grid-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+}
+.grid .grid-item .image img {
+  transition: transform 280ms ease-in-out;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid .grid-item:hover .image img {
+  transform: scale(1.1);
+}
+.grid .info h2 {
+  color: #337AB7;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+.grid .info-text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: center;
+}
+.grid .info-text p:last-child {
+  margin-bottom: 0;
+}
+.grid button {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: #1D99F3;
+  border: none;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  bottom: 14px;
+  margin: 10px auto 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.container__questions {
+  width: 1227px;
+  border: 1px solid rgba(100, 94, 94, 0.3843137255);
+  background-color: #D0EFF1;
+  border-radius: 5px;
+  padding: 16px;
+  margin-top: 17px;
+}
+
+.container__questions img {
+  margin-right: 20px;
+  width: 290px;
+}
+
+.container__questions p {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  height: 402px;
+  background-color: rgb(181, 236, 223);
+  margin-top: 80px;
+  padding: 76px 0;
+}
+footer li {
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(16, 0, 75);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 200px;
+}
+footer .footer-left img {
+  margin-bottom: 20px;
+}
+footer .footer-center ul :nth-child(1) {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  height: 402px;
+  background-color: rgb(181, 236, 223);
+  margin-top: 80px;
+  padding: 76px 0;
+}
+footer li {
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(16, 0, 75);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 200px;
+}
+footer .footer-left img {
+  margin-bottom: 20px;
+}
+footer .footer-center ul :nth-child(1) {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .text {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .text ul {
+    margin-right: 30px;
+  }
+  .container {
+    width: 1024px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 60px;
+    padding: 20px 0;
+  }
+  .containertwo {
+    display: grid;
+    grid-template-columns: repeat(2, 470px);
+    gap: 60px;
+    margin-top: 30px;
+    grid-template-rows: 440px;
+  }
+  .container__questions {
+    width: 980px;
+    border: 1px solid rgba(100, 94, 94, 0.3843137255);
+    background-color: #D0EFF1;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .text ul :nth-child(3) {
+    display: none;
+  }
+  .text ul :nth-child(4) {
+    display: none;
+  }
+  .text {
+    width: 768px;
+  }
+  .text .burger {
+    display: flex;
+    width: 50px;
+    height: 24px;
+    margin-right: 100px;
+    margin-top: 30px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 60px;
+    padding: 20px 0;
+  }
+  .containertwo {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 60px;
+    margin-top: 30px;
+    grid-template-rows: 510px;
+  }
+  .container__questions {
+    width: 700px;
+    border: 1px solid rgba(100, 94, 94, 0.3843137255);
+    background-color: #D0EFF1;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 17px;
+  }
+  .container {
+    width: 768px;
+  }
+}
+@media (max-width: 480px) {
+  .text ul :nth-child(3) {
+    display: none;
+  }
+  .text ul :nth-child(4) {
+    display: none;
+  }
+  .text {
+    width: 480px;
+  }
+  .text .burger {
+    display: flex;
+    width: 50px;
+    height: 24px;
+    margin-right: 100px;
+    margin-top: 30px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 280px);
+    gap: 60px;
+    padding: 20px 0;
+  }
+  .containertwo {
+    display: grid;
+    grid-template-columns: repeat(1, 470px);
+    gap: 60px;
+    margin-top: 30px;
+    grid-template-rows: 440px;
+  }
+  .container__questions {
+    width: 300px;
+    border: 1px solid rgba(100, 94, 94, 0.3843137255);
+    background-color: #D0EFF1;
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 17px;
+  }
+  .container {
+    width: 480px;
+  }
+}/*# sourceMappingURL=style3.css.map */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="cont">
+        <div class="text"><img src="img/logo.svg" alt="">
+          <ul>
+            <li><a>Дилерам</a></li>
+            <li><a>Информация</a></li>
+            <li><a>zam@prod.com</a></li>
+            <li> <a>8 (800) 300-12-50</a></li>
+          </ul><img class="burger" src="img/kdlfcgbmzdc.png" alt="burger">
+        </div>
+      </div>
+    </header>
+    <div class="cont"> 
+      <h1>Вакансии </h1>
+      <div class="containertwo">
+        <div class="containertwo__elem">
+          <p class="containertwo__elem-post">Менеджер по продажам</p>
+          <h2 class="containertwo__elem-post">Доход:</h2>
+          <p class="containertwo__elem-post">до 180 тыс.руб</p>
+          <h2 class="containertwo__elem-post">Требования:</h2>
+          <p class="containertwo__elem-post">- Гражданство РФ</p>
+          <p class="containertwo__elem-post">- Способность к обучению</p>
+          <p class="containertwo__elem-post">- Опыт неважен  </p>
+        </div>
+        <div class="containertwo__elem">
+          <p class="containertwo__elem-post">Повар</p>
+          <h2>Доход:</h2>
+          <p class="containertwo__elem-post">до 80 тыс.руб</p>
+          <h2 class="containertwo__elem-post">Требования:</h2>
+          <p class="containertwo__elem-post">- Гражданство РФ</p>
+          <p class="containertwo__elem-post">- Способность к обучению</p>
+          <p class="containertwo__elem-post">- Опыт неважен </p>
+        </div>
+        <div class="containertwo__elem">
+          <p class="containertwo__elem-post">Кладовщик</p>
+          <h2>Доход:</h2>
+          <p>до 100 тыс.руб</p>
+          <h2 class="containertwo__elem-post">Требования:</h2>
+          <p class="containertwo__elem-post">- Гражданство РФ</p>
+          <p class="containertwo__elem-post">- Способность к обучению</p>
+          <p class="containertwo__elem-post">- Опыт неважен </p>
+        </div>
+        <div class="containertwo__elem"> 
+          <p class="containertwo__elem-post">Комплектовщик</p>
+          <h2>Доход:</h2>
+          <p>до 120 тыс.руб</p>
+          <h2 class="containertwo__elem-post">Требования:</h2>
+          <p class="containertwo__elem-post">- Гражданство РФ</p>
+          <p class="containertwo__elem-post">- Способность к обучению</p>
+          <p class="containertwo__elem-post">- Опыт неважен</p>
+        </div>
+      </div>
+    </div>
+    <div class="cont"> 
+      <h1>Новости</h1>
+      <section class="grid"> 
+        <article class="grid-item">
+          <div class="image"><img src="img/news_1.png" alt=""></div>
+          <div class="info"> 
+            <h2>Мясу режут стоимость</h2>
+          </div>
+          <div class="info-text">
+            <p>Темпы снижения оптовых цен на основные виды мяса ускоряются в условиях повышенного внимания регуляторов к этому рынку</p>
+          </div>
+          <button>Подробнее</button>
+        </article>
+        <article class="grid-item">
+          <div class="image"><img src="img/news_2.png" alt=""></div>
+          <div class="info"> 
+            <h2>Мясу режут стоимость</h2>
+          </div>
+          <div class="info-text">
+            <p>Группа компаний "Дамате" первой в России получила право экспорта мяса и субпродуктов утки в Китай</p>
+          </div>
+          <button>Подробнее</button>
+        </article>
+        <article class="grid-item">
+          <div class="image"><img src="img/news_3.png" alt=""></div>
+          <div class="info"> 
+            <h2>Рыбаки Камчатки приблизились к рекорду </h2>
+          </div>
+          <div class="info-text">
+            <p>Промышленный лов тихоокеанских лососей завершится на Камчатке 20 сентября, эта рыбалка стала второй по результативности за всю историю</p>
+          </div>
+          <button>Подробнее</button>
+        </article>
+      </section>
+    </div>
+    <div class="cont"> 
+      <h1>Вопросы и ответы </h1>
+      <div class="container__questions"><img src="img/questions_1.png" alt="">
+        <p>Каковы основные методы замораживания продукции?</p>
+        <p>- Заморозка воздухом (конвективное замораживание) и заморозка в жидком азоте</p><img src="img/questions_2.png" alt="">
+        <p>Как долго можно хранить замороженную продукцию?</p>
+        <p>- Срок хранения может варьироваться в зависимости от продукта, но обычно срок составляет от нескольких месяцев до нескольких лет</p><img src="img/questions_3.png" alt="">
+        <p>Какие преимущества замороженной продукции перед свежей?</p>
+        <p>- Замороженная продукция дольше хранится, легче перевозится, и удобна в использовании при приготовлении блюд</p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="container"> 
+      <div class="footer-left"><img src="img/logo.svg" alt="">
+        <ul>
+          <li>Фабрика GG. 2022</li>
+          <li>© Все права защищены</li>
+        </ul>
+      </div>
+      <div class="footer-center"> 
+        <ul> 
+          <li>8 (800) 300-12-50</li>
+          <li>м. Полежаевская</li>
+          <li>123154, г. Москва, пр-т. Маршала Жукова, д. <br> 52, "Мебельный Центр"</li>
+          <li>support@sofiadoors.com</li>
+        </ul>
+      </div>
+      <div class="footer-right"> 
+        <ul> 
+          <li>Рыба</li>
+          <li>Выпечка</li>
+          <li>Овощи</li>
+          <li>Ягоды</li>
+          <li>Пельмени</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
